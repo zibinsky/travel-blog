@@ -1,0 +1,664 @@
+.body__container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.body__container-cover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 50px 15px;
+  position: relative;
+}
+.body__container .burger__menu-open {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  font-size: 3rem;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 20;
+  display: none;
+}
+.body__container .burger__menu-open:hover {
+  color: #ed1a4b;
+}
+.body__container .hide-button {
+  left: 100% !important;
+  transition: all 0.5s !important;
+}
+.body__container .visible-button {
+  left: 0 !important;
+  transition: all 0.5s !important;
+}
+
+.page__title {
+  background-image: url("../images/bali-1-min.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page__title .page__aside {
+  width: 10%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__title .page__aside p {
+  font-size: 6.7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  line-height: 0;
+  color: #ccc;
+  transform: rotate(-90deg);
+}
+.page__title .page__descr {
+  width: 40% !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 100px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.2s;
+}
+.page__title .page__descr-ticket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #ed1a4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__title .page__descr-title {
+  margin-top: 200px;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+}
+.page__title .page__descr-par {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  margin-bottom: 50px;
+  position: relative;
+}
+.page__title .page__descr-footer {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4rem;
+  color: #c0c0c0;
+}
+.page__title .page__descr .button-view {
+  width: 200px;
+  height: 50px;
+  font-weight: 400;
+  background-color: #fff;
+  border-radius: 3px;
+  position: relative;
+}
+.page__title .page__descr .button-view-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  color: #171717;
+  transition: all 0.2s;
+}
+.page__title .page__descr .button-view-link:hover {
+  background-color: #ed1a4b;
+  color: #f0f0f0;
+}
+.page__title .page__descr .page__descr-places {
+  max-width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.page__title .page__descr .page__descr-places-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+.page__title .page__descr .page__descr-places-button a:hover {
+  background-color: #ed1a4b;
+  border: 1px solid transparent;
+}
+.page__title .page__descr-index form .textarea,
+.page__title .page__descr-travel form .textarea,
+.page__title .page__descr-contact form .textarea {
+  resize: none;
+}
+.page__title .page__descr-travel .page__descr-title,
+.page__title .page__descr-contact .page__descr-title {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+}
+.page__title .page__descr input,
+.page__title .page__descr textarea,
+.page__title .page__descr button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: #f0f0f0;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+}
+.page__title .page__descr button {
+  transition: all 0.2s;
+}
+.page__title .page__descr button:hover {
+  background-color: #ed1a4b;
+  border: 1px solid transparent;
+}
+.page__title .page__menu {
+  width: 40%;
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+}
+.page__title .page__menu-list {
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.page__title .page__menu-list .page__menu-item .page__menu-link {
+  display: inline-block;
+  padding: 15px 30px;
+  color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+.page__title .page__menu-list .page__menu-item .page__menu-link:hover {
+  background-color: #ed1a4b;
+  border: 1px solid transparent;
+}
+
+.page__title .page__descr-travel-pl {
+  width: 80% !important;
+  height: 80% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 100px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.2s;
+}
+.page__title .page__descr-travel-pl .button-view__back {
+  position: absolute;
+  left: -30px;
+  bottom: -30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+.page__title .page__descr-travel-items {
+  width: 100% !important;
+  height: 100% !important;
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.page__title .page__descr-travel-items .page__descr-travel-item {
+  width: 25%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+.page__title .page__descr-travel-items .page__descr-travel-item .travel__item-image {
+  width: 100%;
+  height: 30%;
+  margin-bottom: 10px;
+}
+.page__title .page__descr-travel-items .page__descr-travel-item .travel__item-image img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.page__title .page__descr-travel-items .page__descr-travel-item .travel__item-date {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.page__title .page__descr-travel-items .page__descr-travel-item .travel__item-title {
+  margin-top: 10px;
+  padding: 0 10px;
+  font-weight: bold;
+}
+.page__title .page__descr-travel-items .page__descr-travel-item .travel__item-descr {
+  padding: 10px;
+  line-height: 1.3;
+}
+.page__title .page__descr-travel-items .page__descr-travel-item .travel__item-descr p {
+  font-size: 0.8rem;
+}
+
+.page__title-baikal {
+  background-image: url("../images/baikal-1-min.jpg");
+}
+
+.page__title-bali {
+  background-image: url("../images/bali-1-min.jpg");
+}
+
+.page__title-kuba {
+  background-image: url("../images/kuba-1-min.jpg");
+}
+
+.page__title-moscow {
+  background-image: url("../images/moscow-3-min.jpg");
+}
+
+.page__title-ny {
+  background-image: url("../images/ny-4-min.jpg");
+}
+
+.page__title-paris {
+  background-image: url("../images/paris-4-min.jpg");
+}
+
+.page__title-piter {
+  background-image: url("../images/piter-4-min.jpg");
+}
+
+.page__title-praga {
+  background-image: url("../images/praga-4-min.jpg");
+}
+
+.page__social {
+  width: 700px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: calc(100% - 400px);
+  transform: rotate(-90deg);
+  border-radius: 2px;
+}
+.page__social-light {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.page__social-dark {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.page__social-red {
+  background-color: rgba(237, 26, 75, 0.4);
+}
+.page__social ion-icon {
+  margin-left: 20px;
+  font-size: 2rem;
+  color: #ccc;
+}
+
+.hr-red {
+  width: 50%;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: flex !important;
+}
+
+.left {
+  left: 0 !important;
+  transition: all 0.5s;
+}
+
+.page__descr-move-baikal {
+  display: flex !important;
+  flex-direction: row !important;
+  background-color: red;
+}
+
+@media (max-width: 1500px) {
+  .body__container-cover .page__descr-contact .page__descr-title {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1300px) {
+  .body__container-cover .page__descr {
+    padding: 0 20px;
+  }
+
+  .body__container-cover .page__descr .page__descr-title,
+.body__container-cover .page__descr-travel .page__descr-title {
+    font-size: 2.5rem;
+  }
+
+  .page__descr .page__descr-par,
+.page__descr .page__descr-ticket {
+    font-size: 0.8rem;
+  }
+
+  .body__container-cover .page__descr .button-view {
+    width: 150px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .page__menu .page__menu-list {
+    font-size: 0.6rem;
+  }
+
+  .page__menu .page__menu-list .page__menu-link {
+    padding: 10px 25px !important;
+  }
+
+  .page__descr .page__descr-footer {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 1080px) {
+  .body__container-cover .page__descr-contact .page__descr-title {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .body__container-cover .page__aside {
+    width: 10%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body__container-cover .page__aside p {
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    line-height: 0;
+    color: #ccc;
+    transform: rotate(-90deg);
+  }
+
+  .body__container-cover .page__menu {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    transition: all 0.5s;
+  }
+  .body__container-cover .page__menu-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .body__container-cover .page__menu-list .page__menu-item {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body__container-cover .page__menu-list .page__menu-item .page__menu-link {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  .body__container .burger__menu-open {
+    display: block;
+  }
+
+  .body__container-cover .page__descr-travel {
+    width: 50% !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .body__container-cover .page__descr .page__descr-places {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .body__container-cover .page__descr .page__descr-places-button {
+    margin-top: 10px;
+    width: 70%;
+  }
+  .body__container-cover .page__descr .page__descr-places-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: all 0.2s;
+  }
+  .body__container-cover .page__descr .page__descr-places-button a:hover {
+    background-color: #ed1a4b;
+    border: 1px solid transparent;
+  }
+}
+.body__container-cover .page__descr-contact {
+  width: 60%;
+}
+
+.travel__item-descr p {
+  font-size: 0.5rem;
+}
+
+@media (max-width: 854px) {
+  .body__container-cover .page__descr {
+    width: 60%;
+  }
+
+  .body__container-cover .page__descr-title {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
+
+  .body__container-cover .page__descr-footer {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 800px) {
+  .body__container-cover .page__descr-title {
+    font-size: 1.8rem;
+  }
+
+  .body__container-cover .page__descr-footer {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .body__container-cover .page__menu .page__menu-list {
+    justify-content: flex-start;
+  }
+  .body__container-cover .page__menu .page__menu-list .page__menu-item {
+    margin-top: 50px;
+  }
+
+  .body__container-cover .page__menu .page__menu-item .page__menu-link {
+    width: 70%;
+  }
+
+  .body__container-cover .page__descr {
+    width: 80% !important;
+    height: 90%;
+  }
+  .body__container-cover .page__descr-title {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 1.7rem !important;
+  }
+  .body__container-cover .page__descr-par {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+  }
+  .body__container-cover .page__descr .page__descr-places-button a {
+    font-size: 0.8rem;
+  }
+  .body__container-cover .page__descr-footer {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 30px;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.1rem;
+    color: #c0c0c0;
+  }
+
+  .body__container-cover .page__descr-places {
+    align-items: center;
+  }
+
+  .body__container .page__social {
+    width: 50%;
+    height: 50px;
+    justify-content: space-around;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: none;
+  }
+  .body__container .page__social ion-icon {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+}
+@media (max-width: 640px) {
+  .body__container-cover .page__aside {
+    width: 10%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
+  }
+  .body__container-cover .page__aside p {
+    font-size: 4.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    line-height: 0;
+    color: #ccc;
+    transform: rotate(-90deg);
+  }
+
+  .body__container .page__social ion-icon {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 470px) {
+  .body__container-cover .page__menu .page__menu-link {
+    font-size: 0.8rem !important;
+  }
+
+  .body__container-cover .page__descr {
+    width: 80%;
+  }
+  .body__container-cover .page__descr .page__descr-title {
+    font-size: 1.7rem;
+  }
+  .body__container-cover .page__descr .page__descr-par {
+    margin-bottom: 30px;
+  }
+  .body__container-cover .page__descr .page__descr-footer {
+    width: 80%;
+    padding-bottom: 20px;
+    line-height: 0.8rem;
+  }
+
+  .body__container-cover .page__descr-travel .page__descr-places-button {
+    width: 90%;
+  }
+
+  .body__container-cover .page__descr-contact .page__descr-title {
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 425px) {
+  .body__container .burger__menu-open {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .body__container-cover .page__descr-travel .page__descr-title {
+    font-size: 1.5rem !important;
+  }
+
+  .body__container-cover .page__descr-contact .page__descr-title {
+    font-size: 1.3rem !important;
+  }
+
+  .body__container .page__social {
+    width: 70%;
+  }
+}
